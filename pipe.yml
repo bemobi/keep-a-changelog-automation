@@ -1,0 +1,23 @@
+name: Keep a Changelog Automation
+image: raphacps/keep-a-changelog-automation:0.0.1
+description: Automation scripts for version management and changelog generation.
+category: Deployment
+repository: https://bitbucket.org/git-m4u/keep-a-changelog-automation
+variables:
+  - name: CLIENT_KEY
+    default: '${CLIENT_KEY}'
+  - name: SECRET_KEY
+    default: '${SECRET_KEY}' # this is pulling the value of $SECRET_KEY from the pipeline
+  - name: BUMP_TYPE
+vendor:
+  name: Amazon
+  website: https://amazon.com
+maintainer:
+  name: Bemobi
+  website: https://bemobi.com/
+tags:
+    - deployment
+    - amazon
+    - ecs
+    - fargate
+    - changelog

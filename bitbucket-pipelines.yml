@@ -1,0 +1,17 @@
+image:
+  name: atlassian/default-image:3
+  username: $IZZIE_DOCKER_HUB_USER
+  password: $IZZIE_DOCKER_HUB_API_KEY
+
+pipelines:
+  branches:
+    main:
+      - step:
+          name: Build and Push
+          script:
+            - pipe: m4ucorp/keep-a-changelog-automation:0.0.1
+              variables:
+                CLIENT_KEY: $CLIENT_KEY
+                SECRET_KEY: $SECRET_KEY
+                BUMP_TYPE: minor
+

@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    container_name: keep_a_changelog
+    environment:
+      - CLIENT_KEY=teste
+      - SECRET_KEY=teste2
+      - BUMP_TYPE=minor
