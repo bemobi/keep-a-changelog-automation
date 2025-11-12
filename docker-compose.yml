@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    image: m4ucorp/keep-a-changelog-automation:0.0.1
+    container_name: keep_a_changelog
+    environment:
+      - CLIENT_KEY=teste
+      - SECRET_KEY=teste2
+      - BUMP_TYPE=minor

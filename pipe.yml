@@ -1,0 +1,21 @@
+name: Keep a Changelog Automation
+image: m4ucorp/keep-a-changelog-automation:0.0.1
+description: Automation scripts for version management and changelog generation.
+category: Deployment
+repository: https://github.com/bemobi/keep-a-changelog-automation
+variables:
+  - name: ACCESS_TOKEN
+    default: '${ACCESS_TOKEN}'
+  - name: BUMP_TYPE
+vendor:
+  name: Amazon
+  website: https://amazon.com
+maintainer:
+  name: Bemobi
+  website: https://bemobi.com/
+tags:
+    - deployment
+    - amazon
+    - ecs
+    - fargate
+    - changelog
